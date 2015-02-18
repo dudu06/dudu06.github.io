@@ -15,6 +15,77 @@
 		<script src="js/skel.min.js"></script>
 		<script src="js/skel-layers.min.js"></script>
 		<script src="js/init.js"></script>
+
+		<script>
+		$(document).ready(function () {	
+
+		  $('a[href^="#graphics"]').on('click',function (e) {
+                e.preventDefault();
+
+                var target = this.hash;
+                $target = $(target);
+
+                $('html, body').stop().animate({
+                    'scrollTop': $target.offset().top
+                }, 1200, 'swing', function () {
+                    window.location.hash = target;
+                });
+          }); 
+
+          $('a[href^="#development"]').on('click',function (e) {
+                e.preventDefault();
+
+                var target = this.hash;
+                $target = $(target);
+
+                $('html, body').stop().animate({
+                    'scrollTop': $target.offset().top
+                }, 1200, 'swing', function () {
+                    window.location.hash = target;
+                });
+          }); 
+
+          $('a[href^="#ux"]').on('click',function (e) {
+                e.preventDefault();
+
+                var target = this.hash;
+                $target = $(target);
+
+                $('html, body').stop().animate({
+                    'scrollTop': $target.offset().top
+                }, 1200, 'swing', function () {
+                    window.location.hash = target;
+                });
+          });
+
+           $('a[href^="#about"]').on('click',function (e) {
+                e.preventDefault();
+
+                var target = this.hash;
+                $target = $(target);
+
+                $('html, body').stop().animate({
+                    'scrollTop': $target.offset().top
+                }, 1200, 'swing', function () {
+                    window.location.hash = target;
+                });
+          });
+
+          $('a[href^="#contact"]').on('click',function (e) {
+                e.preventDefault();
+
+                var target = this.hash;
+                $target = $(target);
+
+                $('html, body').stop().animate({
+                    'scrollTop': $target.offset().top
+                }, 1200, 'swing', function () {
+                    window.location.hash = target;
+                });
+          });
+
+        }); 
+        </script>      
 	
 		<noscript>
 			<link rel="stylesheet" href="css/skel.css" />
@@ -31,7 +102,9 @@
 			<div id="header">
 						
 				<!-- Inner -->
+				<img src="images/jeremi.png" alt="" />
 					<div class="inner">
+
 						<header>
 							<h1><a href="index.html" id="logo">Hi, I'm Jeremi and </br>I'm a UI/UX Developer.</a></h1>
 							<!-- <hr /> -->
@@ -43,8 +116,14 @@
 					</div>
 				
 				<!-- Nav -->
-					<!-- <nav id="nav"> -->
+					<nav id="nav"> 
 						<ul>
+							<li><a href="no-sidebar.html">My Process</a></li>
+							<li><a href="#ux"> UX/UI </a></li>
+							<li><a href="#graphics">Graphic Design</a></li>
+							<li><a href="#development">Development/ Illustrations</a></li>
+							<li><a href="#about">About Me</a></li>
+							<li><a href="#contact">Contact</a></li>
 							<!-- <li><a href="index.html">Home</a></li> -->
 							<li>
 						<!-- 		<a href="">Dropdown</a>
@@ -69,13 +148,18 @@
 							<li><a href="no-sidebar.html">No Sidebar</a></li>
 						</ul> -->
 					<!-- 	Logo -->
-					<!-- </nav> --> 
+					</nav> 
+
+					
+					
+				</ul>
 
 			</div>
 
 
 		<!-- Banner -->
 			<section id="banner">
+				<div id="ux"></div> <!-- THIS DIV IS HERE FOR SCROLL -->
 				<header>
 					<h2>I do awesome UI/UX work like below. And I code. But it wasn't always like this...</h2>
 						
@@ -123,6 +207,7 @@
 
 		<!-- infograpic story -->
 			<section id="banner">
+				<div id="graphics"></div> <!-- THIS DIV IS HERE FOR THE SCROLL TO WORK -->
 				<header>
 					<div class="wrapper">
 						<section id="features" class="container special">
@@ -315,7 +400,7 @@
 
 
 
-
+						<div id="development"></div> <!-- THIS DIV IS HERE FOR SCROLL -->
 						<header>
 						<h2>I decided to take a web development course at General Assembly. It was awesome. I learned Ruby on Rails and other stuff, <strong>but my strengths were UI Design and Front-End Development.</strong></h2>
 						</header>
@@ -323,7 +408,7 @@
 
 
 						
-						<article class="4u special">
+						<article class="4u special">  
 							<a href="https://superstarrps5.firebaseapp.com/" class="image featured"><img src="images/rps.png" alt="" /></a>
 							<header>
 								<h3><a href="#">Rock, Paper, Scissors</a></h3>
@@ -413,7 +498,7 @@
 
 				<article id="main" class="container special">
 					<a href="#" class="image featured"><img src="images/pic18.jpg" alt="" /></a> 
-
+					<div id="about"></div> <!-- THIS DIV IS HERE FOR SCROLL -->
 					<header>
 						<h2><a href="#">I'm not your typical UI/UX Developer...</a></h2>
 
@@ -467,6 +552,7 @@
 							
 							<!-- Copyright -->
 								<div class="copyright">
+									<div id="contact"></div> <!-- THIS DIV IS HERE FOR SCROLL -->
 									<ul class="menu">
 										<li>&copy; Jeremi Dudu. All rights reserved.</li><!-- li>Design: <a href="http://html5up.net">HTML5 UP</a></li> -->
 									</ul>
