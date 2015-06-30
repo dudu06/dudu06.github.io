@@ -85,6 +85,7 @@
           });
 
         }); 
+
         </script>      
 	
 		<noscript>
@@ -689,9 +690,43 @@
 				</div>
 			</div>
 
-	<script type="text/javascript" src="js/skrollr.js"></script>
     <script type="text/javascript">
-    var s = skrollr.init();
+
+    		// Function to disable skrollr on mobile
+		( function ( $ ) { 
+		function  enableSkrollr() {
+			console.log('we are on desktop');
+			var s = skrollr.init({
+				render: function(data) {
+					// Log the current scroll position. 
+					// console.log(data.curTop);
+					$('#offset').text(data.curTop);
+					// Skrollr puts a black space at the bottom. This function below removes it!
+					forceHeight: false; 
+					smoothScrolling=true
+					smoothScrollingDuration=-100
+				}
+			});
+		}
+
+		function disableSkrollr() {
+			console.log('we are on mobile');
+
+			// This destroys Skrollr 
+			var s= skrollr.init();
+			s.destroy();
+		}
+
+		enquire.register("screen and (min-width: 700px)", {
+		    match : function() {
+		        enableSkrollr();
+		    },  
+		    unmatch : function() {
+		        disableSkrollr();
+		    }
+		});
+
+		}) ( jQuery ); 
     </script>
 
 	</body>
