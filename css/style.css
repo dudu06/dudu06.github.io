@@ -14,6 +14,18 @@
 
 
 /*Custom Css */
+.short-explanation {
+	width: 80%;
+	margin: 20px auto;
+}
+#line-up .image img {
+	width: 80%;
+	max-width: 960px;
+    margin: 0 auto;	
+}
+#line-up .wrapper {
+	margin-bottom: !important 0; 
+}
 
 #face {
 	margin-top: -85px;
