@@ -97,6 +97,7 @@
 
 			.row > * {
 				/* padding-left: (gutters) */
+				/*WAS 40PX*/
 				padding-left: 40px;
 			}
 

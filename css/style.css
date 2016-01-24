@@ -15,16 +15,38 @@
 
 /*Custom Css */
 .short-explanation {
-	width: 80%;
-	margin: 20px auto;
+	width: 100%;
 }
 #line-up .image img {
-	width: 80%;
+	width: 100%;
 	max-width: 960px;
     margin: 0 auto;	
 }
 #line-up .wrapper {
 	margin-bottom: !important 0; 
+}
+#line-up article, #chic-fit article {
+	max-width: 800px;
+    margin: 0 auto;
+}
+#skel-layers-wrapper .row > article {
+	margin-bottom: 20px
+}
+.mobile-header { display: none}
+#mobile-nav {
+	display: none
+}
+
+.row > * {
+    padding-left: !important 10px;
+}
+
+@media all and (max-width: 600px) {
+#skel-layers-wrapper h2 {width: 100%;font-size: 1.3em;text-align: justify;}
+.mobile-header { display: block; position: absolute; z-index: 1000; top: 0; width: 100%; height: 70px; line-height: 80px; background: #fff; padding-top: 10px;}
+.burger-button { float: right; padding-right: 20px;}
+#mobile-nav { display: block; }
+#banner { padding: 1%}
 }
 
 #face {
