@@ -17,7 +17,7 @@
 .short-explanation {
 	width: 100%;
 }
-#line-up .image img {
+#line-up .image img, .bio {
 	width: 100%;
 	max-width: 960px;
     margin: 0 auto;	
