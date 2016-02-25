@@ -18,6 +18,7 @@
 .short-explanation {
 	width: 100%;
 }
+.homepage h2 { font-family: 'Vollkorn', serif; }
 #line-up .image img, .bio {
 	width: 100%;
 	max-width: 960px;
