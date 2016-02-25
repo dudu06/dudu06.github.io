@@ -14,6 +14,7 @@
 
 
 /*Custom Css */
+#mgo .overlay { position: absolute; z-index: 1000; width: 100%; height: 100%; background: 0,0,0,0.4;}
 .short-explanation {
 	width: 100%;
 }
@@ -26,7 +27,7 @@
 	margin-bottom: !important 0; 
 }
 #line-up article, #chic-fit article {
-	max-width: 800px;
+	max-width: 900px;
     margin: 0 auto;
 }
 #skel-layers-wrapper .row > article {
