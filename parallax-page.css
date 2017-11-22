@@ -1,0 +1,110 @@
+body { width: 100%; height: auto; margin: 0; padding: 0; background: #FFD535 }
+* { box-sizing: border-box; } 
+p { font-family: 'Archivo Black', sans-serif; font-size: 1.5em; font-weight: 300; margin: 0 }
+<link href="https://fonts.googleapis.com/css?family=Archivo+Black" rel="stylesheet">
+
+/***** SCREEN OFFSET FOR SCROLL INDICATION *****/
+#offset { position: fixed; top:0; height: 40px; text-align: center; width: 100%; background-color: rgba(0, 0, 0, 0.5); color: white; padding: 10px 0; z-index: 9999; }
+.s1 { fill: none;  stroke-width: 27px; stroke-linejoin: round; stroke-miterlimit: 4.0; stroke: rgb(255,255,255) ; stroke-opacity: 1;}
+/***** END OF SCREEN OFFSET *****/
+
+.text { text-align: center; padding-top: 15%; font-size: 3em; font-family: 'Archivo Black', sans-serif; font-weight: 700; color: #000; letter-spacing: 0px; line-height: 137% }
+
+/***** SECTION CLASSES *****/
+.animated-text {-webkit-animation: animate 3s infinite; -moz-animation: animate 3s infinite; }
+@-webkit-keyframes animate { 0% { transform: scale(.7) } 50% { transform: scale(.9) } 100% { transform: scale(.7) } }
+.hero .text { width: 100%; padding-top: 4%; font-size: 3em; margin-bottom: 20px }
+.hero p { text-align: center; margin: 0; font-size: 2em; color: #fff;}
+.second-section .text { padding-top: 0%; font-size: 4.5em }
+.third-section .text { padding-top: 0%; font-size: 5em; text-align: left }
+.fourth-section .text { width: 50%; float: left; display: inline-block; text-align: left; font-size: 4em; max-width: 600px; padding-left: 2%;}
+.fifth-section .text { font-size: 3em; padding-top: 10%; text-align: left; letter-spacing: 6px; line-height: 137%;}
+
+.second-section,
+.third-section,
+.fourth-section,
+.fifth-section,
+.sixth-section,
+.seventh-section {position: fixed; height: 100vh; width: 100% }
+
+.second-section { top: 100vh;}
+.third-section { top: 200vh; }
+.fourth-section { top: 300vh;}
+.fifth-section { top: 400vh;}
+.sixth-section { top: 500vh; }
+.seventh-section { top: 600vh; }
+
+.second-section article {position: relative; z-index: 10}
+
+.third-section .right { width: 60%;}
+
+.fifth-section .text { font-size: 3em; padding-top: 10%; text-align: left; letter-spacing: 6px; line-height: 137% }
+
+.seventh-section { text-align: center }
+.seventh-section .left { width: 100%}
+.white-font { color: #FFFFFE }
+
+.sixth-section .text { text-align: left }
+.sixth-section .left { width: 33%; padding-left: 2% }
+/***** END OF SECTION CLASSES *****/
+
+
+
+/***** HERO SECTION *****/
+.hero { height: 100vh; width: 100%; top: 0 }
+#hero-face { width: 50%; position: absolute; margin-left: -23%; left: 50%;}
+
+
+
+/***** END OF HERO SECTION *****/
+
+
+/***** BASKETBALL SECTION *****/
+#basketball { right: -30%; top: 30%;z-index:-1; position: absolute; stroke: #F6DA35; width: 5%;}
+.shadow { background: rgba(0,0,0,.5); z-index: -5; border-radius: 50%; width: 15%; height: 30%; top:10%; left: 50%; margin-left: -7.5%; margin-top: 3% }
+#backboard { width: 48%; margin-top: -12%; z-index: -10; position: absolute; left: 50%; margin-left: -25% }
+#basket { width: 30%;left: 50%;margin-left: -16.5%;margin-top: 11.5%;position: absolute }
+#NET {z-index: 100; opacity: .9;}
+#RIM { width: 10% }
+#net-swoosh { width: 30% }
+/***** END OF BASKETBALL SECTION *****/
+
+
+/***** SKATEBOARD SECTION *****/
+#staircase { left:-2px; height: 103%;  position: absolute;}
+#skateboard { width: 22%; top: 23%;z-index: 10; position: absolute;}
+#skateboard_me { width: 2%; position: absolute; z-index: 10}
+/***** END OF SKATEBOARD SECTION *****/
+
+
+/***** VANS SECTION *****/
+#vans { position: absolute; top: 10%; right: 0%; display:inline-block; height: 100%; width: 50% }
+/***** END OF VANS SECTION *****/
+
+
+/***** BARBER SECTION *****/
+#will_smith { width: 38%; margin: auto; margin-left: -22.5%; left: 50%; position: absolute; bottom: 0 }
+#clipper { position: relative; z-index: 100; padding-top: 7% }
+.fifth-section article { text-align: center; bottom: 0}
+/***** END OF BARBER SECTION *****/
+
+
+/***** LAST SECTION *****/
+#poop { width: 15%; transition: all ease-in .3s }
+#poop-fill { fill: #91654B; transition: all ease-in .3s }
+#poop-fill:hover { fill: #50311A ; transition: all ease-in .3s }
+/***** END OF LAST SECTION *****/
+
+
+/************ OTHER STUFF *********************/
+.skrollable { position: fixed; }
+#offset { position: fixed; top:0; text-align: center; width: 100%; background-color: rgba(0, 0, 0, 0.5); color: white; padding: 10px 0; z-index: 9999; }
+#progressBar { background-color: #000; height: 10px; width: 0; position: fixed; top: 0; left: 0; z-index: 2000; }
+#scroll-container { height: 4000px; position: absolute; width: 100%; }
+/************ END OF OTHER STUFF **************/
+
+
+/************HELPER CLASSES*********************/
+.left { float: left; width: 30%; }
+.right { float: right; width: 48%; padding-top: 10vh }
+/************END OF HELPER CLASSES*************/
