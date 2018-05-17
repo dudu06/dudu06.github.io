@@ -21,6 +21,35 @@ img.animated-gif{
 	width: 100%
 }
 
+
+.back-link {
+	color: #16a9c7;
+}
+
+.image.featured.stars {
+	max-width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+}
+
+.center-text {
+	text-align: center
+}
+
+.center-text .reviews {
+	font-weight: 700;
+	margin-top: 10px;
+}
+
+.badge {
+	width: 50%;
+	max-width: 300px;
+	display: block;
+	margin: 20px auto
+}
+
+
 .logo_work {
 	text-align: center
 }
@@ -754,7 +783,7 @@ img.animated-gif{
 	.wrapper
 	{
 		background: #fff;
-		margin: 0 0 2em 0;
+		margin: 0 0 0em 0;
 		padding: 1em 0 1em 0;
 	}
 	
